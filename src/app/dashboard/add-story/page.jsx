@@ -1,12 +1,12 @@
 import Titel from '@/components/Titel';
 import React from 'react';
 
-const Tutorials = () => {
+const AddStory = () => {
     return (
         <div>
-            <Titel>Welcome to tutorials</Titel>
+            <Titel>Add Your Story</Titel>
         </div>
     );
 };
 
-export default Tutorials;
+export default AddStory;
