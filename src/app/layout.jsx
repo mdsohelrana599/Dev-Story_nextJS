@@ -14,20 +14,23 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Dev-Story",
-  description: "An app for showing sorty around tha world",
+  description: "An app for showing stories around the world",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-       <Header></Header>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <div>
+          <Header></Header>
+        </div>
+        
 
-       <main className="px-4 py-8">
-         {children}
-       </main>
-
-       
+        <main className="px-4 py-8 min-h-screen">
+          {children}
+        </main>
       </body>
     </html>
   );
